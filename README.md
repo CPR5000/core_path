@@ -16,10 +16,10 @@ Examples:
 
     // Segment Name Validation across all supported Platforms (Windows, Linux, Mac)
 
-    Console.WriteLine("Valid chatacters: 'A..Z', 'a..z', '0..9', '.' (dot), '-' (dash), '_' (underscore)");
+    Console.WriteLine("Valid characters: 'A..Z', 'a..z', '0..9', '.' (dot), '-' (dash), '_' (underscore)");
     Console.WriteLine(new CorePath("A..Z", "a-z", "0_9").ToString());
 
-    Console.WriteLine("Invalid chatacters:");
+    Console.WriteLine("Invalid characters:");
     try
     {
         Console.WriteLine(new CorePath("Not:Valid").ToString());
@@ -35,7 +35,7 @@ Output:
     System\Lib\README.md
     From an array of strings:
     System\Lib\README.md
-    Valid chatacters: 'A..Z', 'a..z', '0..9', '.' (dot), '-' (dash), '_' (underscore)
+    Valid characters: 'A..Z', 'a..z', '0..9', '.' (dot), '-' (dash), '_' (underscore)
     A..Z\a-z\0_9
-    Invalid chatacters:
+    Invalid characters:
     Throws: Segment naming error: [Not:Valid] Valid characters are A-Z, a-z, 0-9, underscore (_), dash (-) and dot (.)
